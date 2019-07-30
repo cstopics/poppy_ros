@@ -107,7 +107,7 @@
 		<parent link="spine"></parent>
 		<child link="bust_motors"></child>
 		<axis xyz="-1 0 0"></axis>
-		<limit lower="-1.57079" upper="1.57079" effort="10" velocity="3.1415"></limit>
+		<limit lower="-1.0" upper="0.44" effort="10" velocity="3.1415"></limit>
 	</joint>
 	<transmission name="bust_y_trans">
 		<type>transmission_interface/SimpleTransmission</type>
@@ -147,7 +147,7 @@
 		<parent link="bust_motors"></parent>
 		<child link="chest"></child>
 		<axis xyz="0 0 1"></axis>
-		<limit lower="-1.57079" upper="1.57079" effort="10" velocity="3.1415"></limit>
+		<limit lower="-1.0" upper="1.0" effort="10" velocity="3.1415"></limit>
 	</joint>
 	<transmission name="bust_x_trans">
 		<type>transmission_interface/SimpleTransmission</type>
@@ -187,7 +187,7 @@
 		<parent link="chest"></parent>
 		<child link="neck"></child>
 		<axis xyz="0 1 0"></axis>
-		<limit lower="-1.57079" upper="1.57079" effort="10" velocity="3.1415"></limit>
+		<limit lower="-1.0" upper="1.0" effort="10" velocity="3.1415"></limit>
 	</joint>
 	<transmission name="head_z_trans">
 		<type>transmission_interface/SimpleTransmission</type>
@@ -227,7 +227,7 @@
 		<parent link="neck"></parent>
 		<child link="head"></child>
 		<axis xyz="-1 0 0"></axis>
-		<limit lower="-1.57079" upper="1.57079" effort="10" velocity="3.1415"></limit>
+		<limit lower="-0.74" upper="0.2" effort="10" velocity="3.1415"></limit>
 	</joint>
 	<transmission name="head_y_trans">
 		<type>transmission_interface/SimpleTransmission</type>
@@ -267,7 +267,7 @@
 		<parent link="chest"></parent>
 		<child link="l_shoulder"></child>
 		<axis xyz="1 0 0"></axis>
-		<limit lower="-1.57079" upper="1.57079" effort="10" velocity="3.1415"></limit>
+		<limit lower="-1.8" upper="0.3" effort="10" velocity="3.1415"></limit>
 	</joint>
 	<transmission name="l_shoulder_y_trans">
 		<type>transmission_interface/SimpleTransmission</type>
@@ -307,7 +307,7 @@
 		<parent link="l_shoulder"></parent>
 		<child link="l_shoulder_motor"></child>
 		<axis xyz="0 0 1"></axis>
-		<limit lower="-1.57079" upper="1.57079" effort="10" velocity="3.1415"></limit>
+		<limit lower="-0.4" upper="1.8" effort="10" velocity="3.1415"></limit>
 	</joint>
 	<transmission name="l_shoulder_x_trans">
 		<type>transmission_interface/SimpleTransmission</type>
@@ -387,7 +387,7 @@
 		<parent link="l_upper_arm"></parent>
 		<child link="l_forearm"></child>
 		<axis xyz="1 0 0"></axis>
-		<limit lower="-1.57079" upper="1.57079" effort="10" velocity="3.1415"></limit>
+		<limit lower="-2.4" upper="0.0" effort="10" velocity="3.1415"></limit>
 	</joint>
 	<transmission name="l_elbow_y_trans">
 		<type>transmission_interface/SimpleTransmission</type>
@@ -427,7 +427,7 @@
 		<parent link="chest"></parent>
 		<child link="r_shoulder"></child>
 		<axis xyz="-1 0 0"></axis>
-		<limit lower="-1.57079" upper="1.57079" effort="10" velocity="3.1415"></limit>
+		<limit lower="-0.3" upper="1.8" effort="10" velocity="3.1415"></limit>
 	</joint>
 	<transmission name="r_shoulder_y_trans">
 		<type>transmission_interface/SimpleTransmission</type>
@@ -467,7 +467,7 @@
 		<parent link="r_shoulder"></parent>
 		<child link="r_shoulder_motor"></child>
 		<axis xyz="0 0 -1"></axis>
-		<limit lower="-1.57079" upper="1.57079" effort="10" velocity="3.1415"></limit>
+		<limit lower="-0.4" upper="1.8" effort="10" velocity="3.1415"></limit>
 	</joint>
 	<transmission name="r_shoulder_x_trans">
 		<type>transmission_interface/SimpleTransmission</type>
@@ -547,7 +547,7 @@
 		<parent link="r_upper_arm"></parent>
 		<child link="r_forearm"></child>
 		<axis xyz="-1 0 0"></axis>
-		<limit lower="-1.57079" upper="1.57079" effort="10" velocity="3.1415"></limit>
+		<limit lower="0.0" upper="2.4" effort="10" velocity="3.1415"></limit>
 	</joint>
 	<transmission name="r_elbow_y_trans">
 		<type>transmission_interface/SimpleTransmission</type>

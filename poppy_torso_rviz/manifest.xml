@@ -1,0 +1,14 @@
+<package>
+  <description brief="poppy_torso_rviz">
+
+     poppy_torso_rviz
+
+  </description>
+  <author>Camilo Camacho</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/poppy_torso_rviz</url>
+
+</package>
+
+
