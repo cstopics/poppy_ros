@@ -1,0 +1,57 @@
+poppy_torso:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  abs_z_position_controller:
+    type: position_controllers/JointPositionController
+    joint: abs_z
+  
+  bust_y_position_controller:
+    type: position_controllers/JointPositionController
+    joint: bust_y
+  
+  bust_x_position_controller:
+    type: position_controllers/JointPositionController
+    joint: bust_x
+
+  head_z_position_controller:
+    type: position_controllers/JointPositionController
+    joint: head_z
+
+  head_y_position_controller:
+    type: position_controllers/JointPositionController
+    joint: head_y
+
+  l_shoulder_y_position_controller:
+    type: position_controllers/JointPositionController
+    joint: l_shoulder_y
+
+  l_shoulder_x_position_controller:
+    type: position_controllers/JointPositionController
+    joint: l_shoulder_x
+
+  l_arm_z_position_controller:
+    type: position_controllers/JointPositionController
+    joint: l_arm_z
+
+  l_elbow_y_position_controller:
+    type: position_controllers/JointPositionController
+    joint: l_elbow_y
+
+  r_shoulder_y_position_controller:
+    type: position_controllers/JointPositionController
+    joint: r_shoulder_y
+
+  r_shoulder_x_position_controller:
+    type: position_controllers/JointPositionController
+    joint: r_shoulder_x
+
+  r_arm_z_position_controller:
+    type: position_controllers/JointPositionController
+    joint: r_arm_z
+
+  r_elbow_y_position_controller:
+    type: position_controllers/JointPositionController
+    joint: r_elbow_y

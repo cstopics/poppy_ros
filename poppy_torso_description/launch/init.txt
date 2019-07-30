@@ -1,0 +1,15 @@
+rostopic pub -1 /poppy_torso/abs_z_position_controller/command std_msgs/Float64 -- 0.0
+rostopic pub -1 /poppy_torso/bust_x_position_controller/command std_msgs/Float64 -- 0.0
+rostopic pub -1 /poppy_torso/bust_y_position_controller/command std_msgs/Float64 -- 0.0
+rostopic pub -1 /poppy_torso/head_z_position_controller/command std_msgs/Float64 -- 0.0
+rostopic pub -1 /poppy_torso/head_y_position_controller/command std_msgs/Float64 -- 0.0
+
+rostopic pub -1 /poppy_torso/l_shoulder_y_position_controller/command std_msgs/Float64 -- 0.0
+rostopic pub -1 /poppy_torso/l_shoulder_x_position_controller/command std_msgs/Float64 -- 0.0
+rostopic pub -1 /poppy_torso/l_arm_z_position_controller/command std_msgs/Float64 -- 0.0
+rostopic pub -1 /poppy_torso/l_elbow_y_position_controller/command std_msgs/Float64 -- 0.0
+
+rostopic pub -1 /poppy_torso/r_shoulder_y_position_controller/command std_msgs/Float64 -- 0.0
+rostopic pub -1 /poppy_torso/r_shoulder_x_position_controller/command std_msgs/Float64 -- 0.0
+rostopic pub -1 /poppy_torso/r_arm_z_position_controller/command std_msgs/Float64 -- 0.0
+rostopic pub -1 /poppy_torso/r_elbow_y_position_controller/command std_msgs/Float64 -- 0.0
