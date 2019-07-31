@@ -1,4 +1,5 @@
 <launch>
+
   <arg
     name="model" />
 
@@ -19,4 +20,5 @@
     pkg="rviz"
     type="rviz" 
     args=" -d $(find poppy_torso_rviz)/config/config.rviz"/>
+
 </launch>

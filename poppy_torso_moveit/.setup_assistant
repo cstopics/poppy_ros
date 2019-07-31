@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: poppy_torso_description
+    relative_path: urdf/poppy_torso.urdf
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/poppy_torso.srdf
+  CONFIG:
+    author_name: Camilo Camacho
+    author_email: camilo.im93@gmail.com
+    generated_timestamp: 1564541685

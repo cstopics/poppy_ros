@@ -1,0 +1,72 @@
+controller_list:
+  - name: fake_r_arm_controller
+    joints:
+      - r_shoulder_y
+      - r_shoulder_x
+      - r_arm_z
+      - r_elbow_y
+  - name: fake_l_arm_controller
+    joints:
+      - l_shoulder_y
+      - l_shoulder_x
+      - l_arm_z
+      - l_elbow_y
+  - name: fake_head_controller
+    joints:
+      - head_z
+      - head_y
+  - name: fake_torso_controller
+    joints:
+      - abs_z
+      - bust_y
+      - bust_x
+  - name: fake_r_arm_torso_controller
+    joints:
+      - abs_z
+      - bust_y
+      - bust_x
+      - r_shoulder_y
+      - r_shoulder_x
+      - r_arm_z
+      - r_elbow_y
+  - name: fake_l_arm_torso_controller
+    joints:
+      - abs_z
+      - bust_y
+      - bust_x
+      - l_shoulder_y
+      - l_shoulder_x
+      - l_arm_z
+      - l_elbow_y
+  - name: fake_head_torso_controller
+    joints:
+      - abs_z
+      - bust_y
+      - bust_x
+      - head_z
+      - head_y
+  - name: fake_all_controller
+    joints:
+      - abs_z
+      - bust_y
+      - bust_x
+      - head_z
+      - head_y
+      - l_shoulder_y
+      - l_shoulder_x
+      - l_arm_z
+      - l_elbow_y
+      - r_shoulder_y
+      - r_shoulder_x
+      - r_arm_z
+      - r_elbow_y
+  - name: fake_arms_controller
+    joints:
+      - l_shoulder_y
+      - l_shoulder_x
+      - l_arm_z
+      - l_elbow_y
+      - r_shoulder_y
+      - r_shoulder_x
+      - r_arm_z
+      - r_elbow_y
