@@ -45,7 +45,25 @@ sudo apt-get install ros-kinetic-joint-state-controller  ros-kinetic-position-co
 
 ## Installation
 
+Create a catkin workspace, clone the repository and build it:
+
+``` bash
+$ mkdir -p ~/ros/poppy_ws/src
+$ cd ~/ros/poppy_ws/src/
+$ git clone https://github.com/cstopics/poppy_ros
+$ cd ..
+$ catkin_make
+```
+
 ## Testing
+
+### Simulation
+
+Launch nodes:
+
+``` bash
+roslaunch poppy_torso_gazebo poppy_torso_gazebo.launch
+```
 
 Test joints:
 
