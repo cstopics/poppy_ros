@@ -29,4 +29,101 @@ joint_state_controller:
   type: joint_state_controller/JointStateController
   publish_rate: 50
 controller_list:
-  []
+  - name: r_arm_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - r_shoulder_y
+      - r_shoulder_x
+      - r_arm_z
+      - r_elbow_y
+  - name: l_arm_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - l_shoulder_y
+      - l_shoulder_x
+      - l_arm_z
+      - l_elbow_y
+  - name: head_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - head_z
+      - head_y
+  - name: torso_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - abs_z
+      - bust_y
+      - bust_x
+  - name: r_arm_torso_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - abs_z
+      - bust_y
+      - bust_x
+      - r_shoulder_y
+      - r_shoulder_x
+      - r_arm_z
+      - r_elbow_y
+  - name: l_arm_torso_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - abs_z
+      - bust_y
+      - bust_x
+      - l_shoulder_y
+      - l_shoulder_x
+      - l_arm_z
+      - l_elbow_y
+  - name: head_torso_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - abs_z
+      - bust_y
+      - bust_x
+      - head_z
+      - head_y
+  - name: all_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - abs_z
+      - bust_y
+      - bust_x
+      - head_z
+      - head_y
+      - l_shoulder_y
+      - l_shoulder_x
+      - l_arm_z
+      - l_elbow_y
+      - r_shoulder_y
+      - r_shoulder_x
+      - r_arm_z
+      - r_elbow_y
+  - name: arms_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - l_shoulder_y
+      - l_shoulder_x
+      - l_arm_z
+      - l_elbow_y
+      - r_shoulder_y
+      - r_shoulder_x
+      - r_arm_z
+      - r_elbow_y

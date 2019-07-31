@@ -8,4 +8,4 @@ moveit_setup_assistant_config:
   CONFIG:
     author_name: Camilo Camacho
     author_email: camilo.im93@gmail.com
-    generated_timestamp: 1564541685
+    generated_timestamp: 1564543631
