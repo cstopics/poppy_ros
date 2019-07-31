@@ -23,7 +23,4 @@
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
   args="-urdf -z 0.0 -model poppy_torso -param robot_description"/>
 
-  <!-- ros_control poppy launch file -->
-  <!--include file="$(find poppy_gazebo)/launch/poppy_flat_feet_control.launch" /-->
-
 </launch>

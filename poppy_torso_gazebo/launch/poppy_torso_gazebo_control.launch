@@ -29,9 +29,13 @@
                 r_elbow_y_position_controller"/>
 
   <!-- convert joint states to TF transforms for rviz, etc -->
-    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+    <node 
+        name="robot_state_publisher" 
+        pkg="robot_state_publisher" 
+        type="robot_state_publisher"
+        ns="/poppy_torso"
         respawn="false" output="screen">
-        <remap from="/joint_states" to="/poppy/joint_states" />
+        <remap from="/joint_states" to="/poppy_torso/joint_states" />
     </node>
 
 </launch>
