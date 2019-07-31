@@ -41,6 +41,7 @@ sudo apt-get install ros-kinetic-gazebo9*
 
 ``` bash
 sudo apt-get install ros-kinetic-joint-state-controller  ros-kinetic-position-controllers ros-kinetic-effort-controllers
+sudo apt-get install ros-kinetic-joint-trajectory-controller
 ```
 
 ## Installation
