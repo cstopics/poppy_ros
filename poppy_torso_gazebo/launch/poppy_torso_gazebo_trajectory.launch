@@ -29,6 +29,6 @@
         <!-- <remap from="/joint_states" to="/poppy_torso/joint_states" /> -->
     </node>
 
-    <remap from="/poppy_torso/joint_states" to="/joint_states" />
+    <!-- <remap from="/poppy_torso/joint_states" to="/joint_states" /> -->
 
 </launch>
