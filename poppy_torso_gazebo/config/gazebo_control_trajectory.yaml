@@ -20,18 +20,18 @@ poppy_torso:
         - l_arm_z
         - l_elbow_y
 
-  # head_controller:
-  #     type: position_controllers/JointTrajectoryController
-  #     joints:
-  #       - head_z
-  #       - head_y
+  head_controller:
+      type: position_controllers/JointTrajectoryController
+      joints:
+        - head_z
+        - head_y
 
-  # torso_controller:
-  #     type: position_controllers/JointTrajectoryController
-  #     joints:
-  #       - abs_z
-  #       - bust_y
-  #       - bust_x
+  torso_controller:
+      type: position_controllers/JointTrajectoryController
+      joints:
+        - abs_z
+        - bust_y
+        - bust_x
 
   # r_arm_torso_controller:
   #     type: position_controllers/JointTrajectoryController

@@ -47,3 +47,18 @@ controller_list:
       - l_shoulder_x
       - l_arm_z
       - l_elbow_y
+  - name: torso_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - abs_z
+      - bust_y
+      - bust_x
+  - name: head_controller
+    action_ns: follow_joint_trajectory
+    default: True
+    type: FollowJointTrajectory
+    joints:
+      - head_z
+      - head_y

@@ -18,3 +18,19 @@
         - l_shoulder_x
         - l_arm_z
         - l_elbow_y
+    - name: poppy_torso/head_controller
+      action_ns: follow_joint_trajectory
+      type: FollowJointTrajectory
+      default: true
+      joints:
+        - head_z
+        - head_y
+
+    - name: poppy_torso/torso_controller
+      action_ns: follow_joint_trajectory
+      type: FollowJointTrajectory
+      default: true
+      joints:
+        - abs_z
+        - bust_y
+        - bust_x

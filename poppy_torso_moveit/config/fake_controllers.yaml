@@ -11,3 +11,12 @@ controller_list:
       - l_shoulder_x
       - l_arm_z
       - l_elbow_y
+  - name: fake_torso_controller
+    joints:
+      - abs_z
+      - bust_y
+      - bust_x
+  - name: fake_head_controller
+    joints:
+      - head_z
+      - head_y
