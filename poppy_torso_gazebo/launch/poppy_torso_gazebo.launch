@@ -6,7 +6,7 @@
     </include>
 
     <!-- CONTROLLERS -->
-    <include file="$(find poppy_torso_gazebo)/launch/poppy_torso_gazebo_control.launch">
+    <include file="$(find poppy_torso_gazebo)/launch/poppy_torso_gazebo_trajectory.launch">
     </include>
 
 </launch>

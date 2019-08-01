@@ -26,7 +26,9 @@
                 r_shoulder_y_position_controller
                 r_shoulder_x_position_controller
                 r_arm_z_position_controller
-                r_elbow_y_position_controller"/>
+                r_elbow_y_position_controller
+                "
+    />
 
   <!-- convert joint states to TF transforms for rviz, etc -->
     <node 

@@ -1,0 +1,104 @@
+poppy_torso:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  r_arm_controller:
+      type: position_controllers/JointTrajectoryController
+      joints:
+        - r_shoulder_y
+        - r_shoulder_x
+        - r_arm_z
+        - r_elbow_y
+
+  l_arm_controller:
+      type: position_controllers/JointTrajectoryController
+      joints:
+        - l_shoulder_y
+        - l_shoulder_x
+        - l_arm_z
+        - l_elbow_y
+
+  head_controller:
+      type: position_controllers/JointTrajectoryController
+      joints:
+        - head_z
+        - head_y
+
+  torso_controller:
+      type: position_controllers/JointTrajectoryController
+      joints:
+        - abs_z
+        - bust_y
+        - bust_x
+
+  r_arm_torso_controller:
+      type: position_controllers/JointTrajectoryController
+      joints:
+        - abs_z
+        - bust_y
+        - bust_x
+        - r_shoulder_y
+        - r_shoulder_x
+        - r_arm_z
+        - r_elbow_y
+
+  l_arm_torso_controller:
+      type: position_controllers/JointTrajectoryController
+      joints:
+        - abs_z
+        - bust_y
+        - bust_x
+        - l_shoulder_y
+        - l_shoulder_x
+        - l_arm_z
+        - l_elbow_y
+
+  head_torso_controller:
+      type: position_controllers/JointTrajectoryController
+      joints:
+        - abs_z
+        - bust_y
+        - bust_x
+        - head_z
+        - head_y
+
+  all_controller:
+      type: FollowJposition_controllers/JointTrajectoryControllerointTrajectory
+      joints:
+        - abs_z
+        - bust_y
+        - bust_x
+        - head_z
+        - head_y
+        - l_shoulder_y
+        - l_shoulder_x
+        - l_arm_z
+        - l_elbow_y
+        - r_shoulder_y
+        - r_shoulder_x
+        - r_arm_z
+        - r_elbow_y
+        
+  arms_controller:
+      type: position_controllers/JointTrajectoryController
+      joints:
+        - l_shoulder_y
+        - l_shoulder_x
+        - l_arm_z
+        - l_elbow_y
+        - r_shoulder_y
+        - r_shoulder_x
+        - r_arm_z
+        - r_elbow_y
+
+    # l_arm_controller:
+    #   action_ns: follow_joint_trajectory
+    #   default: True
+    #   type: position_controllers/JointTrajectoryController
+    #   joints:
+    #     - l_shoulder_y
+    #     - l_shoulder_x
+    #     - l_arm_z
+    #     - l_elbow_y
