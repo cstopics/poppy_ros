@@ -9,3 +9,12 @@
         - r_shoulder_x
         - r_arm_z
         - r_elbow_y
+    - name: poppy_torso/l_arm_controller
+      action_ns: follow_joint_trajectory
+      type: FollowJointTrajectory
+      default: true
+      joints:
+        - l_shoulder_y
+        - l_shoulder_x
+        - l_arm_z
+        - l_elbow_y

@@ -12,13 +12,13 @@ poppy_torso:
         - r_arm_z
         - r_elbow_y
 
-  # l_arm_controller:
-  #     type: position_controllers/JointTrajectoryController
-  #     joints:
-  #       - l_shoulder_y
-  #       - l_shoulder_x
-  #       - l_arm_z
-  #       - l_elbow_y
+  l_arm_controller:
+      type: position_controllers/JointTrajectoryController
+      joints:
+        - l_shoulder_y
+        - l_shoulder_x
+        - l_arm_z
+        - l_elbow_y
 
   # head_controller:
   #     type: position_controllers/JointTrajectoryController

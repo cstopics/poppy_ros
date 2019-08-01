@@ -5,3 +5,9 @@ controller_list:
       - r_shoulder_x
       - r_arm_z
       - r_elbow_y
+  - name: fake_l_arm_controller
+    joints:
+      - l_shoulder_y
+      - l_shoulder_x
+      - l_arm_z
+      - l_elbow_y

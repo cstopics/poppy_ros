@@ -15,6 +15,7 @@
         ns="/poppy_torso"
         args="	joint_state_controller
                 r_arm_controller
+                l_arm_controller
                 "
     />
 
