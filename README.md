@@ -1,5 +1,7 @@
 # Poppy ROS
 
+Created using this tutorial: https://github.com/AS4SR/general_info/wiki/Basic-ROS-MoveIt!-and-Gazebo-Integration
+
 ## Prerequisites
 
 Tested with *Ubuntu 16.04*
