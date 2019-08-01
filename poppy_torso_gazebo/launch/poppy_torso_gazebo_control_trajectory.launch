@@ -1,0 +1,34 @@
+<launch>
+
+	<param name="robot_description" command="cat $(find poppy_torso_description)/urdf/poppy_torso.urdf" />
+
+    <!-- Load joint controller configurations from YAML file to parameter server -->
+    <rosparam file="$(find poppy_torso_gazebo)/config/gazebo_control_trajectory.yaml" command="load"/>
+
+    <!-- load the controllers -->
+    <node 
+        name="controller_spawner" 
+        pkg="controller_manager" 
+        type="spawner" 
+        respawn="false"
+        output="screen"
+        ns="/poppy_torso"
+        args="	joint_state_controller
+                r_arm_controller
+                "
+    />
+
+  <!-- convert joint states to TF transforms for rviz, etc -->
+    <node 
+        name="robot_state_publisher" 
+        pkg="robot_state_publisher" 
+        type="robot_state_publisher"
+        ns="poppy_torso"
+        respawn="false" output="screen">
+        <remap from="/joint_states" to="/poppy_torso/joint_states" />
+    </node>
+
+    <node name="joint_states_cloner" pkg="topic_tools" type="relay"
+      args="/poppy_torso/joint_states /joint_states" />
+
+</launch>

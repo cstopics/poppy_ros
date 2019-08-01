@@ -1,0 +1,11 @@
+  controller_manager_ns: ''
+  controller_list:
+    - name: poppy_torso/r_arm_controller
+      action_ns: follow_joint_trajectory
+      type: FollowJointTrajectory
+      default: true
+      joints:
+        - r_shoulder_y
+        - r_shoulder_x
+        - r_arm_z
+        - r_elbow_y

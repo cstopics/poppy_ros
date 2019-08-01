@@ -1,0 +1,6 @@
+controller_list:
+  - name: /full_ctrl
+    action_ns: joint_trajectory_action
+    type: FollowJointTrajectory
+    default: true
+    joints: [j_gripper_wrist1, j_wrist1_arm1, j_arm1_arm2, j_arm2_wrist2, j_wrist2_gripper2]
