@@ -62,7 +62,7 @@ $ catkin_make
 
 ### Direct joint angles in simulation
 
-Launch nodes:
+Simulator nodes:
 
 ``` bash
 roslaunch poppy_torso_gazebo poppy_torso_gazebo_position.launch
@@ -77,14 +77,34 @@ rostopic pub -1 /poppy_torso/head_z_position_controller/command std_msgs/Float64
 rostopic pub -1 /poppy_torso/r_shoulder_x_position_controller/command std_msgs/Float64 -- 1.0
 ```
 
+### MoveIt! with fake robot
+
+MoveIt! nodes:
+
+``` bash
+roslaunch poppy_torso_moveit demo.launch
+```
+
+Control interface nodes:
+
+``` bash
+roslaunch poppy_torso_control poppy_torso_control.launch
+```
+
 ### MoveIt! in simulation with Rviz
 
-Launch nodes:
+Simulator nodes:
 
 ``` bash
 roslaunch poppy_torso_gazebo poppy_torso_gazebo_trajectory.launch
 ```
+MoveIt! nodes:
 
 ``` bash
 roslaunch poppy_torso_moveit moveit_planning_execution.launch
+```
+Control interface nodes:
+
+``` bash
+roslaunch poppy_torso_control poppy_torso_control.launch
 ```
