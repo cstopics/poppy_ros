@@ -1,0 +1,8 @@
+string          group
+float32[]       offset
+bool            execute
+bool            wait
+---
+int8            error
+float32[]       start_pos
+float32[]       target_pos

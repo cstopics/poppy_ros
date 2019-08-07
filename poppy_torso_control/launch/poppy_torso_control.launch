@@ -1,0 +1,23 @@
+<launch>
+
+    <node
+        name="poppy_control_moveit"
+        pkg="poppy_torso_control"
+        type="poppy_control_moveit.py"
+        output="screen"
+    />
+
+    <node
+        name="poppy_torso_collision_checker"
+        pkg="poppy_torso_control"
+        type="poppy_torso_collision_checker"
+        output="screen"
+    />
+
+    <node
+        name="poppy_torso_forward_kinematics"
+        pkg="poppy_torso_control"
+        type="poppy_torso_forward_kinematics"
+        output="screen"
+    />
+</launch>

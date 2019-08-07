@@ -1,0 +1,5 @@
+string  group
+float32[] joints
+---
+float32[] end_pos 
+int8 error

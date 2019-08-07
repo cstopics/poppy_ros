@@ -1,0 +1,15 @@
+string          group
+bool            rand_start
+bool            current_start
+float32[]       start_pos
+bool            rand_target
+float32[]       target_pos
+bool            execute
+bool            wait
+bool            ret_plan
+int8            ret_fps
+---
+int8            error
+float32[]       start_pos
+float32[]       target_pos
+Trajectory[]    plans

@@ -1,0 +1,6 @@
+string          group
+bool            offset
+float32[]       offset_values
+---
+float32         distance
+bool            collision
