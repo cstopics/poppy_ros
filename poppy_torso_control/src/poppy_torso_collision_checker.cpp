@@ -44,7 +44,8 @@ bool collisionDistanceCallback( poppy_torso_control::CollisionDistance::Request 
   if(req.offset){
     for(int i=0; i<group_links.size(); i++){
       std::string link = group_links[i];
-      double link_value = current_state->getVariablePosition(link) + req.offset_values[i];
+      // double link_value = current_state->getVariablePosition(link) + req.offset_values[i];
+      double link_value = req.offset_values[i];
       current_state->setVariablePosition(link, link_value);
     }
   }
